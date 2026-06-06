@@ -72,14 +72,12 @@ project/
 │
 ├── insurance_cross_sell_prediction.ipynb
 ├── README.md
-├
+├ Project description
 │
 ├── data/
 │   ├── TRAINING.csv
 │   └── SCORE.csv
-│
-└── outputs/
-    └── my_prediction.csv
+
 ```
 
 ---
