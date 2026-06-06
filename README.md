@@ -72,7 +72,7 @@ project/
 │
 ├── insurance_cross_sell_prediction.ipynb
 ├── README.md
-├── requirements.txt
+├
 │
 ├── data/
 │   ├── TRAINING.csv
@@ -84,15 +84,6 @@ project/
 
 ---
 
-## Running the Project
-
-1. Install the required dependencies from `requirements.txt`
-2. Open the Jupyter Notebook
-3. Run all cells sequentially from top to bottom
-
-The notebook contains the complete workflow from data preparation and exploratory analysis through model development, ensemble construction, evaluation, and final prediction generation.
-
----
 
 ## Documentation
 
