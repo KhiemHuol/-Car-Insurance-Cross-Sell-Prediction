@@ -1,36 +1,131 @@
-Car Insurance Cross-Sell Prediction
-Overview
+# 🚗 Car Insurance Cross-Sell Prediction
 
-This project was completed as part of BZAN 6357 – Final Group Project and focuses on predicting whether an existing medical insurance customer will purchase a cross-sold car insurance policy after being contacted by a sales representative.
+## Overview
 
-The objective is to build a machine learning solution that can accurately identify high-probability customers, enabling more efficient and targeted marketing efforts.
+This project was completed as part of **BZAN 6357 – Final Group Project** and focuses on predicting whether an existing medical insurance customer will purchase a cross-sold car insurance policy after being contacted by a sales representative.
 
-Project Highlights
-Comprehensive data quality assessment and validation
-Exploratory Data Analysis (EDA) to identify key drivers of purchase behavior
-Feature engineering using domain knowledge and data insights
-Cross-validated target encoding for high-cardinality variables
-Evaluation of multiple machine learning algorithms
-Hyperparameter tuning using Grid Search and Cross Validation
-Class imbalance handling through SMOTE, class weighting, and scale adjustment techniques
-Threshold optimization using Precision-Recall analysis
-Ensemble learning through soft voting and stacking
-Weight optimization using Nelder-Mead optimization
-Final prediction generation for an unseen score dataset
+The objective is to build a machine learning solution capable of identifying customers with the highest likelihood of purchasing car insurance, enabling more effective sales targeting and resource allocation.
 
-Models Evaluated
+---
 
-The project compares a wide range of machine learning approaches, including:
+## Project Highlights
 
-Logistic Regression
-Random Forest
-Gradient Boosting
-HistGradientBoosting
-Extra Trees
-K-Nearest Neighbors
-MLP Neural Network
-PCA + MLP
-XGBoost
-LightGBM
-CatBoost
-Multiple Voting and Stacking Ensembles
+- Data quality assessment and validation
+- Exploratory Data Analysis (EDA)
+- Feature engineering and preprocessing
+- Cross-validated target encoding
+- Feature selection and scaling
+- Class imbalance handling techniques
+- Hyperparameter tuning using Grid Search
+- Evaluation using 10-Fold Stratified Cross Validation
+- Threshold optimization using Precision-Recall analysis
+- Ensemble learning through voting and stacking
+- Weight optimization using Nelder-Mead optimization
+- Final score dataset prediction generation
+
+---
+
+## Models Evaluated
+
+The project evaluates and compares multiple machine learning approaches:
+
+- Logistic Regression
+- Random Forest
+- Gradient Boosting
+- HistGradientBoosting
+- Extra Trees
+- K-Nearest Neighbors
+- MLP Neural Network
+- PCA + MLP
+- XGBoost
+- LightGBM
+- CatBoost
+- Voting Ensembles
+- Stacking Ensembles
+
+---
+
+## Evaluation Metrics
+
+Model performance is evaluated primarily using:
+
+### ROC AUC
+Measures the model's ability to rank purchasers above non-purchasers across all possible classification thresholds.
+
+### F1 Score
+Balances precision and recall, making it particularly useful for imbalanced classification problems.
+
+---
+
+## Final Solution
+
+The final solution is an optimized ensemble model constructed from the strongest individual learners.
+
+Model selection, weight optimization, threshold tuning, and final evaluation were performed using a rigorous cross-validation framework designed to maximize predictive performance while minimizing overfitting.
+
+---
+
+## Repository Structure
+
+```text
+project/
+│
+├── insurance_cross_sell_prediction.ipynb
+├── README.md
+├── requirements.txt
+│
+├── data/
+│   ├── TRAINING.csv
+│   └── SCORE.csv
+│
+└── outputs/
+    └── my_prediction.csv
+```
+
+---
+
+## Running the Project
+
+1. Install the required dependencies from `requirements.txt`
+2. Open the Jupyter Notebook
+3. Run all cells sequentially from top to bottom
+
+The notebook contains the complete workflow from data preparation and exploratory analysis through model development, ensemble construction, evaluation, and final prediction generation.
+
+---
+
+## Documentation
+
+All methodology, feature engineering decisions, preprocessing steps, model selection rationale, hyperparameter tuning procedures, ensemble strategies, evaluation techniques, and business interpretations are thoroughly documented within the notebook itself.
+
+To avoid duplication and maintain a concise repository structure, detailed explanations are intentionally kept within the notebook alongside the corresponding code, visualizations, and results.
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Imbalanced-Learn
+- XGBoost
+- LightGBM
+- CatBoost
+- SciPy
+- TensorFlow
+
+---
+
+## Authors
+
+**BZAN 6357 – Final Group Project**  
+University of Texas at Dallas
+
+---
+
+## License
+
+This project was developed for academic and educational purposes.
