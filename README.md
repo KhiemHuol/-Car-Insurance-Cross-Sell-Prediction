@@ -1,5 +1,3 @@
-# -Car-Insurance-Cross-Sell-Prediction
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
