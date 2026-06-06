@@ -1,4 +1,4 @@
-# 🚗 Car Insurance Cross-Sell Prediction
+# Car Insurance Cross-Sell Prediction
 
 ## Overview
 
@@ -119,10 +119,6 @@ To avoid duplication and maintain a concise repository structure, detailed expla
 
 ---
 
-## Authors
-
-**BZAN 6357 – Final Group Project**  
-University of Texas at Dallas
 
 ---
 
